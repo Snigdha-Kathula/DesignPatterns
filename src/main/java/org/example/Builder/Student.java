@@ -16,16 +16,18 @@ public class Student {
         return new Builder();
     }
 
-    private static class Builder{
+    public static class Builder{
         private int age;
         private int totalMarks;
         private String name;
         public String getName() {
+
             return name;
         }
 
-        public void setName(String name) {
+        public Builder setName(String name) {
             this.name = name;
+            return this;
         }
 
 

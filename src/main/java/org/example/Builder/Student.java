@@ -49,8 +49,9 @@ public class Student {
             return this;
         }
         private void valid(){
-            if(age<=18) throw new IllegalArgumentException("Age should be greater than 18");
-            if(totalMarks<=44) throw new IllegalArgumentException("Total marks should be greater than 44");
+            if((age<=18 || age>80) && (totalMarks<=44 || totalMarks>100)) throw new IllegalArgumentException("Age should be in between 19 and 80 || totalMarks should be in between 45 and 100 ");
+            if(age<=18 || age>80) throw new IllegalArgumentException("Age should be greater than 18 and less than or equal to 80");
+            if(totalMarks<=44 || totalMarks>100) throw new IllegalArgumentException("Total marks should be greater than 44 and less than or equal to 100");
         }
         public Student build(){
             valid();

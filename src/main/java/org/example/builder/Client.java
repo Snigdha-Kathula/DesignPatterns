@@ -1,4 +1,4 @@
-package org.example.Builder;
+package org.example.builder;
 
 public class Client {
     public static void main(String[] args) {

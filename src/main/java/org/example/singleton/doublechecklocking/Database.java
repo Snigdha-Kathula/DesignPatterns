@@ -16,4 +16,7 @@ public class Database {
         return instance;
     }
 }
-
+//Singleton:
+//Singleton is a Creational Design Pattern:-
+//
+//
